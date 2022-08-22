@@ -1,0 +1,10 @@
+.followers {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  height: max-content;
+}
