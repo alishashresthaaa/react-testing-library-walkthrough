@@ -6,7 +6,11 @@ export interface HeaderTypes {
 
 const Header = (props: HeaderTypes) => {
   const { title } = props;
-  return <h1 className="header">{title}</h1>;
+  return (
+    <h1 className="header" data-testid="header">
+      {title}
+    </h1>
+  );
 };
 
 export default Header;

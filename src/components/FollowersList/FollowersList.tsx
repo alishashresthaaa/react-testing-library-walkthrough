@@ -19,7 +19,11 @@ const FollowersList = () => {
     <div className="followerslist-container">
       <div>
         {followers.map((follower: any, index: number) => (
-          <div className="follower-item" key={index}>
+          <div
+            className="follower-item"
+            key={index}
+            data-testid={`follower-item-${index}`}
+          >
             <img src={follower.picture.large} />
             <div className="followers-details">
               <div className="follower-item-name">
