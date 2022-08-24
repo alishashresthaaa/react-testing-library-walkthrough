@@ -85,6 +85,7 @@ describe("", () => {})
 
 - If the component has API consumption, make mock data to make request
 - create **mocks** under /src folder and export mocked data
+- use mock service worker
 
 ### Hooks
 
@@ -92,3 +93,10 @@ describe("", () => {})
 - Sometimes we want to execute a piece of functionality after a test is ran
 - Specify on top level, or inside a describe block
 - beforeEach, afterEach, beforeAll, afterAll
+
+### Mock Service Workers
+
+- Mock API calls when writing test for your applications.
+- If we use actual api calls, the test could fail for many reasons that donot involve your code.
+- No dummy data - unrealiable
+-

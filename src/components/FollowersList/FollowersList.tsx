@@ -18,21 +18,23 @@ const FollowersList = () => {
   return (
     <div className="followerslist-container">
       <div>
-        {followers.map((follower: any, index: number) => (
-          <div
-            className="follower-item"
-            key={index}
-            data-testid={`follower-item-${index}`}
-          >
-            <img src={follower.picture.large} />
-            <div className="followers-details">
-              <div className="follower-item-name">
-                <h4>{follower.name.first}</h4> <h4>{follower.name.last}</h4>
+        {followers?.map((follower: any, index: number) => {
+          return (
+            <div
+              className="follower-item"
+              key={index}
+              data-testid={`follower-item-${index}`}
+            >
+              <img src={follower.picture.large} />
+              <div className="followers-details">
+                <div className="follower-item-name">
+                  <h4>{follower.name.first}</h4> <h4>{follower.name.last}</h4>
+                </div>
+                <p>{follower.login.username}</p>
               </div>
-              <p>{follower.login.username}</p>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <div className="todo-footer">
         <Link to="/">Go Back</Link>
